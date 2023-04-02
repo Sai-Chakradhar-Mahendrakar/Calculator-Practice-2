@@ -1,0 +1,48 @@
+h2 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.bt {
+  background: white;
+  font-family: 'Roboto Mono', monospace;
+  border: none;
+  width: 3.5em;
+  padding: 1em;
+  font-size: 16px;
+  margin-left: .5px;
+  margin-right: .5px;
+}
+
+.in {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  text-align: right;
+}
+
+hr {
+  margin: 1px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  width: 71%;
+  border-color: grey;
+  opacity: 0.2;
+  border-width:thin;
+}
+
+.co{
+  color:#e37739;
+}
+
+.bo{
+  background-color: #e37739;
+  border-radius: 50px;
+  color:white;
+}
+
+.bt:hover{
+  opacity: 0.3
+}
