@@ -17,7 +17,7 @@ for (let b of button) {
           }
         } else {
           if (num == "+" || num == '-' || num == '*' || num == '/') {
-            if (pre == num) {
+            if (pre == "+" || pre == '-' || pre == '*' || pre == '/') {
               console.log(pre, num);
               inp.value = inp.value.slice(0, -1)
             }
