@@ -7,11 +7,9 @@ h2 {
   background: white;
   font-family: 'Roboto Mono', monospace;
   border: none;
-  width: 3.5em;
   padding: 1em;
   font-size: 16px;
-  margin-left: .5px;
-  margin-right: .5px;
+  margin: 0.5px; /* Remove unnecessary horizontal margins */
 }
 
 .in {
@@ -30,19 +28,30 @@ hr {
   width: 71%;
   border-color: grey;
   opacity: 0.2;
-  border-width:thin;
+  border-width: thin;
 }
 
-.co{
-  color:#e37739;
+.co {
+  color: #e37739;
 }
 
-.bo{
+.bo {
   background-color: #e37739;
   border-radius: 50px;
-  color:white;
+  color: white;
 }
 
-.bt:hover{
-  opacity: 0.3
+.bt:hover {
+  opacity: 0.3;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .bt,
+  .in {
+    width: 100%;
+  }
 }
