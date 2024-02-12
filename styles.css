@@ -1,57 +1,108 @@
+/* Global styles */
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Heading styles */
 h2 {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }
 
+/* Button styles */
 .bt {
   background: white;
-  font-family: 'Roboto Mono', monospace;
   border: none;
+  width: 100%; /* Adjusted width */
+  max-width: 10em; /* Maximum width */
   padding: 1em;
-  font-size: 16px;
-  margin: 0.5px; /* Remove unnecessary horizontal margins */
-}
-
-.in {
-  width: 70%;
-  padding: 10px;
-  border: none;
+  font-size: 1em;
+  margin: 0.2em auto; /* Centered margin */
   font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  text-align: right;
 }
 
+.bt:hover {
+  opacity: 0.7; /* Increased opacity */
+}
+
+/* Input styles */
+.in {
+  width: 100%;
+  max-width: 20em; /* Maximum width */
+  padding: 0.625em;
+  border: none;
+  font-size: 1em;
+  text-align: right;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Horizontal line styles */
 hr {
-  margin: 1px;
-  margin-bottom: 0px;
-  margin-left: 5px;
-  width: 71%;
+  margin: 0.063em;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 30em; /* Maximum width */
   border-color: grey;
   opacity: 0.2;
   border-width: thin;
 }
 
+/* Custom color class */
 .co {
   color: #e37739;
 }
 
+/* Custom background class */
 .bo {
   background-color: #e37739;
   border-radius: 50px;
   color: white;
 }
 
-.bt:hover {
-  opacity: 0.3;
+/* Media Queries for responsiveness */
+@media screen and (min-width: 480px) {
+  /* Adjust styles for small screens (e.g., mobile phones) */
+  .bt {
+    max-width: 8em;
+  }
+  
+  .in {
+    max-width: 18em;
+  }
+  
+  hr {
+    max-width: 25em;
+  }
 }
 
-/* Media queries for responsive design */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 1.5rem;
+@media screen and (min-width: 768px) {
+  /* Adjust styles for tablets and larger screens */
+  .bt {
+    max-width: 12em;
   }
-  .bt,
+  
   .in {
-    width: 100%;
+    max-width: 25em;
+  }
+  
+  hr {
+    max-width: 35em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Adjust styles for desktop screens */
+  .bt {
+    max-width: 15em;
+  }
+  
+  .in {
+    max-width: 30em;
+  }
+  
+  hr {
+    max-width: 40em;
   }
 }
