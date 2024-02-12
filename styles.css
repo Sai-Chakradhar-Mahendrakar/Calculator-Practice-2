@@ -1,58 +1,48 @@
-/* Global styles */
-body {
-  font-family: 'Roboto Mono', monospace;
-}
-
-/* Heading styles */
 h2 {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Button styles */
 .bt {
   background: white;
+  font-family: 'Roboto Mono', monospace;
   border: none;
   width: 3.5em;
   padding: 1em;
-  font-size: 1em; /* Relative font size */
-  margin: 0 .5em; /* Shorthand for margin-left and margin-right */
-  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  margin-left: .5px;
+  margin-right: .5px;
 }
 
-.bt:hover {
-  opacity: 0.3;
-}
-
-/* Input styles */
 .in {
   width: 70%;
-  padding: 0.625em; /* Adjusted padding */
+  padding: 10px;
   border: none;
-  font-size: 1em;
-  text-align: right;
   font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  text-align: right;
 }
 
-/* Horizontal line styles */
 hr {
-  margin: 0.063em; /* Adjusted margin */
-  margin-bottom: 0;
+  margin: 1px;
+  margin-bottom: 0px;
   margin-left: 5px;
   width: 71%;
   border-color: grey;
   opacity: 0.2;
-  border-width: thin;
+  border-width:thin;
 }
 
-/* Custom color class */
-.co {
-  color: #e37739;
+.co{
+  color:#e37739;
 }
 
-/* Custom background class */
-.bo {
+.bo{
   background-color: #e37739;
   border-radius: 50px;
-  color: white;
+  color:white;
 }
+
+.bt:hover{
+  opacity: 0.3
+}  
